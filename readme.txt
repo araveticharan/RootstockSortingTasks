@@ -26,5 +26,8 @@ ORDER BY AnnualRevenue Desc NULLS LAST,
 RS_Sort_Mul_Levels 		- Using Sort() method 
 AccountWrapperMul		- Using Comparable interface	
 AccountSorterMul		- Not Important - Which uses AccountWrapperMul
-RS_Sort_Mul_LevelsTest	- Test Class
+RS_Sort_Mul_LevelsTest		- Test Class
+				  Test Classes may fail as Type is PickList and SalesForce limitaion mentioed in 
+				  https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/sforce_api_calls_soql_select_orderby.htm
+				  As a workaround create a formula field likr Type__c with formula TEXT(Type) 
 
